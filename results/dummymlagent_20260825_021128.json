@@ -1,0 +1,158 @@
+{
+  "agent_name": "DummyMLAgent",
+  "model_name": "baseline-constant",
+  "agent_version": "0.1.0",
+  "timestamp": "2026-08-25T02:11:28.985295",
+  "run_id": "run_dummymlagent_d5b181",
+  "summary": {
+    "total_tasks": 6,
+    "passed_tasks": 0,
+    "low_diff_success_pct": 0.0,
+    "med_diff_success_pct": 0.0,
+    "high_diff_success_pct": 0.0,
+    "overall_success_pct": 0.0,
+    "avg_runtime_seconds": 0.023,
+    "total_tokens": 720,
+    "total_cost_usd": 0.0012
+  },
+  "results": [
+    {
+      "task_id": "task_high_01",
+      "task_name": "Multi-Variate Time-Series Forecasting",
+      "difficulty": "high",
+      "metric_name": "MASE",
+      "score": 15.586207,
+      "threshold": 0.85,
+      "passed": false,
+      "telemetry": {
+        "execution_time_seconds": 0.006,
+        "memory_overhead_mb": 0.0,
+        "exit_code": 0,
+        "timeout_occurred": false,
+        "error_message": null,
+        "tokens_used": 240,
+        "cost_usd": 0.0004
+      },
+      "details": {
+        "score": 15.586207,
+        "threshold": 0.85,
+        "passed": false
+      }
+    },
+    {
+      "task_id": "task_high_02",
+      "task_name": "Asymmetric Custom Loss Demand Optimization",
+      "difficulty": "high",
+      "metric_name": "Asymmetric_Weighted_Loss",
+      "score": 50098.955691,
+      "threshold": 380.0,
+      "passed": false,
+      "telemetry": {
+        "execution_time_seconds": 0.036,
+        "memory_overhead_mb": 0.0,
+        "exit_code": 0,
+        "timeout_occurred": false,
+        "error_message": null,
+        "tokens_used": 120,
+        "cost_usd": 0.0002
+      },
+      "details": {
+        "score": 50098.955691,
+        "threshold": 380.0,
+        "passed": false
+      }
+    },
+    {
+      "task_id": "task_low_01",
+      "task_name": "Feature Preprocessing & Imputation",
+      "difficulty": "low",
+      "metric_name": "R2_Score",
+      "score": -1.202554,
+      "threshold": 0.8,
+      "passed": false,
+      "telemetry": {
+        "execution_time_seconds": 0.022,
+        "memory_overhead_mb": 0.0,
+        "exit_code": 0,
+        "timeout_occurred": false,
+        "error_message": null,
+        "tokens_used": 480,
+        "cost_usd": 0.0008
+      },
+      "details": {
+        "score": -1.202554,
+        "threshold": 0.8,
+        "passed": false
+      }
+    },
+    {
+      "task_id": "task_low_02",
+      "task_name": "Robust Tabular Regression",
+      "difficulty": "low",
+      "metric_name": "RMSE",
+      "score": 4.71366,
+      "threshold": 0.6,
+      "passed": false,
+      "telemetry": {
+        "execution_time_seconds": 0.025,
+        "memory_overhead_mb": 0.0,
+        "exit_code": 0,
+        "timeout_occurred": false,
+        "error_message": null,
+        "tokens_used": 360,
+        "cost_usd": 0.0006000000000000001
+      },
+      "details": {
+        "score": 4.71366,
+        "threshold": 0.6,
+        "passed": false
+      }
+    },
+    {
+      "task_id": "task_med_01",
+      "task_name": "Imbalanced Fraud Classification",
+      "difficulty": "medium",
+      "metric_name": "F1_Score",
+      "score": 0.0,
+      "threshold": 0.15,
+      "passed": false,
+      "telemetry": {
+        "execution_time_seconds": 0.027,
+        "memory_overhead_mb": 0.0,
+        "exit_code": 0,
+        "timeout_occurred": false,
+        "error_message": null,
+        "tokens_used": 720,
+        "cost_usd": 0.0012000000000000001
+      },
+      "details": {
+        "score": 0.0,
+        "threshold": 0.15,
+        "passed": false
+      }
+    },
+    {
+      "task_id": "task_med_02",
+      "task_name": "Nonlinear Regression & Tuning",
+      "difficulty": "medium",
+      "metric_name": "RMSE",
+      "score": 15.475841,
+      "threshold": 1.2,
+      "passed": false,
+      "telemetry": {
+        "execution_time_seconds": 0.023,
+        "memory_overhead_mb": 0.0,
+        "exit_code": 0,
+        "timeout_occurred": false,
+        "error_message": null,
+        "tokens_used": 600,
+        "cost_usd": 0.001
+      },
+      "details": {
+        "score": 15.475841,
+        "threshold": 1.2,
+        "passed": false
+      }
+    }
+  ]
+}
