@@ -24,7 +24,7 @@
 ## Key Features
 
 - **Zero ground-truth data leakage** — sandboxed workspaces isolate training data and test features from true test labels, so agents cannot access held-out answers during a run.
-- **Deterministic graders** — solutions are scored with standard metrics ($R^2$, RMSE, F1-Score, MASE, Asymmetric Loss), so repeated runs on the same submission produce the same score.
+- **Deterministic graders** — solutions are scored with standard metrics (R², RMSE, F1-Score, MASE, Asymmetric Loss), so repeated runs on the same submission produce the same score.
 - **Cross-platform sandboxed execution** — a subprocess runner enforces per-task timeouts and tracks peak memory overhead, isolating agent code from the host environment.
 - **Telemetry and cost tracking** — execution time, memory usage, token consumption, and estimated dollar cost are recorded for every run.
 - **Live leaderboard** — results are shown as a terminal table during a run and exported to `LEADERBOARD.md` for tracking over time.
@@ -35,12 +35,12 @@
 
 | Task ID | Name | Tier | Target Metric | Pass Threshold | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `task_low_01` | Feature Preprocessing & Imputation | Low | $R^2$ Score | $\ge 0.80$ | Missing value imputation (MCAR/MAR), categorical encoding, feature scaling. |
-| `task_low_02` | Robust Tabular Regression | Low | RMSE | $\le 0.60$ | Linear regression with heavy-tailed outlier noise in the training set. |
-| `task_med_01` | Imbalanced Fraud Classification | Medium | F1-Score | $\ge 0.15$ | Financial transaction dataset with class imbalance (~5% fraud rate). |
-| `task_med_02` | Nonlinear Hyperparameter Tuning | Medium | RMSE | $\le 1.20$ | Friedman #1 non-linear benchmark with sine and quadratic interactions. |
-| `task_high_01` | Multi-Variate Time-Series Forecast | High | MASE | $\le 0.85$ | Multi-channel sensor forecasting with daily and weekly seasonality. |
-| `task_high_02` | Asymmetric Custom Loss Demand | High | Asymmetric Loss | $\le 380.0$ | Demand estimation where under-predicting stock costs 4x more than over-stocking. |
+| `task_low_01` | Feature Preprocessing & Imputation | Low | R² Score | ≥ 0.80 | Missing value imputation (MCAR/MAR), categorical encoding, feature scaling. |
+| `task_low_02` | Robust Tabular Regression | Low | RMSE | ≤ 0.60 | Linear regression with heavy-tailed outlier noise in the training set. |
+| `task_med_01` | Imbalanced Fraud Classification | Medium | F1-Score | ≥ 0.15 | Financial transaction dataset with class imbalance (~5% fraud rate). |
+| `task_med_02` | Nonlinear Hyperparameter Tuning | Medium | RMSE | ≤ 1.20 | Friedman #1 non-linear benchmark with sine and quadratic interactions. |
+| `task_high_01` | Multi-Variate Time-Series Forecast | High | MASE | ≤ 0.85 | Multi-channel sensor forecasting with daily and weekly seasonality. |
+| `task_high_02` | Asymmetric Custom Loss Demand | High | Asymmetric Loss | ≤ 380.0 | Demand estimation where under-predicting stock costs 4x more than over-stocking. |
 
 Tiers are a rough indicator of difficulty: **Low**-tier tasks are single-step tabular problems solvable with standard preprocessing, **Medium**-tier tasks require handling imbalance or non-linear structure, and **High**-tier tasks require multi-step reasoning (time-series decomposition, custom loss handling) to pass.
 
